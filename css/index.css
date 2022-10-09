@@ -37,6 +37,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     position: relative;
     overflow: hidden;
     background: var(--dark-cyan);
@@ -59,13 +60,14 @@ main img.bottom {
 
 div.container-main {
     width: 90%;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
     background: #fff;
     border-radius: 15px;
     overflow: hidden;
-    z-index: 10;
+    z-index: 100;
 }
 
 section.thumb {
@@ -145,6 +147,33 @@ div.info-numbers h1 {
 div.info-numbers p {
     font-size: .7em;
     color: var(--dark-grayish-blue);
+}
+
+div.credits p{
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+div.credits p a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+div.credits p a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: .2s ease-in-out;
+    border-radius: 20px;
+    background-color: var(--very-dark-desaturated-blue);
+}
+
+div.credits p a:hover::after {
+    width: 100%;
 }
 
 @media screen and (min-width: 500px) {
