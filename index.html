@@ -1,35 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Profile-Card</title>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+    <main>
+        <img src="images/bg-pattern-top.svg" alt="background-img" class="top">
+        <img src="images/bg-pattern-bottom.svg" alt="background-img" class="bottom">
+        <div class="container-main">
+            <section class="thumb">
+                <!-- BACKGROUND-CSS -->
+            </section>
 
-  80K
-  Followers
+            <div class="img">
+                <img src="./images/image-victor.jpg" alt="Image Victor">
+            </div>
 
-  803K
-  Likes
+            <section class="info">
+                <div class="inline-infos">
+                    <h1>Victor Crest</h1>
+                    <h2>26</h2>
+                </div>
+                <p>London</p>
+            </section>
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+            <footer>
+                <div class="info-numbers">
+                    <h1>80K</h1>
+                    <p>Followers</p>
+                </div>
+
+                <div class="info-numbers">
+                    <h1>803K</h1>
+                    <p>Likes</p>
+                </div>
+
+                <div class="info-numbers">
+                    <h1>1.4K</h1>
+                    <p>Photos</p>
+                </div>
+
+            </footer>
+        </div>
+
+        <div class="credits">
+            <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://linktr.ee/erik.__silva" target="_blank">Erik Silva</a></p>
+        </div>
+    </main>
 </body>
 </html>
